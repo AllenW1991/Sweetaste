@@ -1,9 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: -apple-system;
+}
+
+ul,
+ol {
   list-style: none;
+}
+
+a {
   text-decoration: none;
-  font-family: PingFang TC;
 }
 
 .container {
@@ -82,6 +89,108 @@
   margin-top: 230px;
 }
 
+.intro .productTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #eaf0ed;
+}
+
+.intro .productTitle span {
+  display: inline-block;
+  height: 56px;
+  font-size: 20px;
+  line-height: 56px;
+  border-right: 1px solid #eaf0ed;
+  width: 148px;
+  text-align: center;
+}
+
+.intro .productsList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .productsList ul li {
+  margin: 0 10px;
+}
+
+.intro .productsList ul li .productCardTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  padding: 0 20px;
+}
+
+.intro .productsList ul li .productCardTop img {
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.intro .productsList ul li .productCardTop span {
+  letter-spacing: 4px;
+  display: inline-block;
+  width: 36px;
+  height: 107px;
+  font-weight: normal;
+  font-size: 16px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  background: #3f5d45;
+  color: white;
+  text-align: center;
+  line-height: 36px;
+  margin-right: 202px;
+  -webkit-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.intro .productsList ul li .productCardTop span:hover {
+  background: #ffe180;
+  color: #3f5d45;
+}
+
+.intro .productsList ul li a {
+  color: #3f5d45;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  background: #eaf0ed;
+  display: inline-block;
+  width: 300px;
+  height: 65px;
+  line-height: 65px;
+  -webkit-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.intro .productsList ul li a:hover {
+  background: #3f5d45;
+  color: #eaf0ed;
+}
+
+.intro .text h2 {
+  margin: 95px auto;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #3f5d45;
+  letter-spacing: 4px;
+}
+
 .intro .card {
   background: #eaf0ed;
   height: 420px;
@@ -129,6 +238,7 @@
   color: #3f5d45;
   position: absolute;
   top: -20px;
+  letter-spacing: 2px;
 }
 
 .intro .pic-left .content p {
@@ -182,6 +292,7 @@
   position: absolute;
   top: -20px;
   right: 42px;
+  letter-spacing: 2px;
 }
 
 .intro .pic-right .content p {
@@ -193,5 +304,163 @@
   color: #8da291;
   position: absolute;
   line-height: 48px;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+footer .contact {
+  height: 340px;
+  background: #eaf0ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #3f5d45;
+}
+
+footer .contact .slogan {
+  width: 380px;
+  margin-top: 30px;
+  margin-left: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .contact .slogan span {
+  display: block;
+  width: 380px;
+  height: 16px;
+  text-align: right;
+}
+
+footer .contact .slogan h4 {
+  font-size: 24px;
+  width: 380px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+footer .contact .info {
+  margin-right: 160px;
+  margin-top: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 227px;
+  font-size: 16px;
+}
+
+footer .contact .info img {
+  width: 172px;
+  height: 27px;
+}
+
+footer .contact .info ul {
+  height: 50px;
+}
+
+footer .contact .info .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+footer .contact .info .icon img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+footer .mail {
+  background: #3f5d45;
+  height: 116px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 116px;
+}
+
+footer .mail .search {
+  margin-left: 110px;
+  position: relative;
+}
+
+footer .mail .search .send {
+  cursor: pointer;
+  top: 26px;
+  right: 0;
+  position: absolute;
+  width: 64px;
+  height: 56px;
+  background: #ffe180;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .mail .search .send .arrowForward {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+footer .mail .search .mailImg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 42px;
+  left: 26px;
+}
+
+footer .mail .search input {
+  outline: none;
+  border: 0;
+  width: 380px;
+  height: 56px;
+  padding-left: 64px;
+  font-size: 28px;
+}
+
+footer .mail .mailRight {
+  margin-right: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .mail .mailRight img {
+  margin: 38px 20px 38px 0;
+  width: 40px;
+  height: 40px;
+}
+
+footer .mail .mailRight h4 {
+  color: #eaf0ed;
+  font-size: 24px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */
