@@ -635,3 +635,140 @@ footer {
     }
   }
 }
+.cart {
+  color: #3f5d45;
+  width: 940px;
+  margin: 80px auto 80px auto;
+  display: flex;
+  .cartSummary {
+    width: 300px;
+    background: #3f5d45;
+    height: 200px;
+    color: #eaf0ed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    button {
+      display: inline-block;
+      background: #ffe180;
+      width: 300px;
+      height: 65px;
+      line-height: 65px;
+      color: #3f5d45;
+      font-size: 24px;
+      font-weight: bold;
+      border: 0;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+    p {
+      display: block;
+      padding-bottom: 20px;
+      width: 250px;
+      margin: 16px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #eaf0ed;
+    }
+    .cal {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 300px;
+      text-align: center;
+      align-items: center;
+      p {
+        height: 16px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        border: 0;
+        margin-bottom: 8px;
+        font-size: 16px;
+        span {
+          display: inline-block;
+          border: 0;
+        }
+      }
+      p:nth-child(3) {
+        margin-top: 8px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+  img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+  }
+  .cartProducts {
+    margin-right: 20px;
+    ul {
+      width: 620px;
+      i {
+        line-height: 130px;
+      }
+      li {
+        margin: 20px 0;
+        padding-bottom: 20px;
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        border-bottom: 1px solid #eaf0ed;
+        align-items: center;
+        i {
+          cursor: pointer;
+        }
+        span {
+          background: white;
+        }
+        .totalPrice {
+          font-weight: bold;
+        }
+        .number {
+          span {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            border: 1px solid #eaf0ed;
+            line-height: 16px;
+            text-align: center;
+            line-height: 48px;
+          }
+          span:nth-child(odd) {
+            cursor: pointer;
+          }
+        }
+        .productName {
+          text-align: left;
+          line-height: 16px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 108px;
+          height: 48px;
+          span {
+            display: block;
+            height: 16px;
+            width: 108px;
+          }
+        }
+      }
+    }
+    .cartTitle {
+      color: #3f5d45;
+      text-align: center;
+      line-height: 65px;
+      font-size: 24px;
+      font-weight: bold;
+      width: 620px;
+      height: 65px;
+      display: inline-block;
+      background: #eaf0ed;
+      margin-bottom: 20px;
+    }
+  }
+}
