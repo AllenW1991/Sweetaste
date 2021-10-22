@@ -761,4 +761,106 @@ footer .mail .mailRight h4 {
   font-size: 24px;
   font-weight: normal;
 }
+
+.member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px auto 80px auto;
+  width: 780px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.member .community {
+  color: #8da291;
+  width: 390px;
+  background: white;
+  padding: 15px 0;
+}
+
+.member .community .communityInside {
+  background: #eaf0ed;
+  height: 350px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.member .community .communityInside span {
+  display: inline-block;
+  padding: 40px 67px;
+}
+
+.member .community .communityInside li a {
+  display: inline-block;
+  width: 330px;
+  height: 56px;
+  background: #ffffff;
+  margin-bottom: 16px;
+  line-height: 56px;
+}
+
+.member .community .communityInside li a img {
+  -webkit-filter: grayscale(1);
+  width: 330px;
+  height: 56px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.member .community .communityInside li a img:hover {
+  -webkit-filter: grayscale(0);
+}
+
+.member .login {
+  color: #eaf0ed;
+  background: #3f5d45;
+  width: 390px;
+  height: 380px;
+}
+
+.member .login li {
+  position: relative;
+}
+
+.member .login li i {
+  top: calc(50% - 12px);
+  color: #3f5d45;
+  left: 40px;
+  font-size: 24px;
+  position: absolute;
+}
+
+.member .login h1 {
+  margin: 40px 125px;
+}
+
+.member .login input {
+  padding-left: 48px;
+  margin: 8px 30px;
+  width: 282px;
+  height: 56px;
+}
+
+.member .login input:nth-child(3) {
+  width: 16px;
+  height: 16px;
+  margin: 8px 8px 16px 30px;
+}
+
+.member .login span:nth-child(3) {
+  cursor: pointer;
+  display: block;
+  margin: 10px 0;
+  background: #ffe180;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+  color: #3f5d45;
+  font-size: 24px;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
