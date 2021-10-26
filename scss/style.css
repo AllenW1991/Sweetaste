@@ -1054,6 +1054,7 @@ footer .mail .mailRight h4 {
 
 .delievery {
   margin: 0 auto;
+  margin-bottom: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1061,7 +1062,7 @@ footer .mail .mailRight h4 {
       -ms-flex-pack: center;
           justify-content: center;
   width: 800px;
-  height: 577px;
+  height: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1074,6 +1075,68 @@ footer .mail .mailRight h4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 20px;
+}
+
+.delievery .delInfo .creditCardBack {
+  margin-top: 30px;
+  position: relative;
+}
+
+.delievery .delInfo .creditCardBack input {
+  margin: 8px 0;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  width: 160px;
+  height: 56px;
+  font-size: 20px;
+}
+
+.delievery .delInfo .creditCard {
+  margin-top: 30px;
+  position: relative;
+}
+
+.delievery .delInfo .creditCard input {
+  margin: 8px 0;
+  padding-left: 20px;
+  width: 354px;
+  height: 56px;
+  font-size: 20px;
+}
+
+.delievery .delInfo .creditCard i {
+  color: #3f5d45;
+  position: absolute;
+  top: 54%;
+  right: 20px;
+}
+
+.delievery .delInfo .cardFirstName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-right: 6px;
+  font-size: 20px;
+}
+
+.delievery .delInfo .cardFirstName p {
+  width: 380px;
+}
+
+.delievery .delInfo .cardFirstName input {
+  margin: 8px 0;
+  padding-left: 20px;
+  width: 160px;
+  height: 56px;
+  font-size: 20px;
+}
+
+.delievery .delInfo .cardFirstName input:nth-child(3) {
+  margin-left: 8px;
 }
 
 .delievery .delInfo .infoTel input {
@@ -1115,6 +1178,10 @@ footer .mail .mailRight h4 {
   width: 380px;
 }
 
+.delievery .delInfo .infoAddr p {
+  margin-bottom: 8px;
+}
+
 .delievery .delInfo .infoAddr input {
   margin: 8px 0;
   width: 354px;
@@ -1131,10 +1198,34 @@ footer .mail .mailRight h4 {
   padding-left: 20px;
 }
 
+.delievery .delInfo .dueTime {
+  width: 380px;
+}
+
+.delievery .delInfo .dueTime p {
+  margin-bottom: 8px;
+}
+
+.delievery .delInfo .dueTime input {
+  margin: 8px 0;
+  width: 354px;
+  height: 56px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.delievery .delInfo .dueTime select {
+  margin-right: 1px;
+  font-size: 20px;
+  height: 56px;
+  width: 186px;
+  padding-left: 20px;
+}
+
 .delievery .delDetail {
   padding: 30px 40px;
   width: 380px;
-  height: 500px;
+  height: auto;
   background: #3f5d45;
   color: #eaf0ed;
   margin-right: 20px;
@@ -1150,7 +1241,7 @@ footer .mail .mailRight h4 {
   cursor: pointer;
   position: absolute;
   left: 0;
-  bottom: -20px;
+  bottom: -50px;
   display: block;
   width: 460px;
   height: 65px;
@@ -1166,12 +1257,7 @@ footer .mail .mailRight h4 {
           justify-content: space-between;
 }
 
-.delievery .delDetail .delDetailTitle .progress {
-  height: 50px;
-  line-height: 50px;
-}
-
-.delievery .delDetail .delDetailTitle .progress span:nth-child(1) {
+.delievery .delDetail .delDetailTitle .step-1 span:nth-child(1) {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -1180,7 +1266,30 @@ footer .mail .mailRight h4 {
   border: 4px double #3f5d45;
 }
 
-.delievery .delDetail .delDetailTitle .progress span {
+.delievery .delDetail .delDetailTitle .step-1 span:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 38px;
+  height: 1px;
+  top: 50%;
+  right: 21px;
+  background: #eaf0ed;
+}
+
+.delievery .delDetail .delDetailTitle .step-1 span:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 38px;
+  height: 1px;
+  top: 50%;
+  right: 21px;
+  background: #eaf0ed;
+}
+
+.delievery .delDetail .delDetailTitle .step-1 span {
+  position: relative;
   margin-left: 34px;
   display: inline-block;
   width: 20px;
@@ -1188,6 +1297,119 @@ footer .mail .mailRight h4 {
   background: #3f5d45;
   border: 1px solid;
   border-radius: 50%;
+}
+
+.delievery .delDetail .delDetailTitle .step-2 span:nth-child(1) {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+.delievery .delDetail .delDetailTitle .step-2 span:nth-child(2) {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  border: 4px double #3f5d45;
+}
+
+.delievery .delDetail .delDetailTitle .step-2 span:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 38px;
+  height: 1px;
+  top: 50%;
+  right: 21px;
+  background: #eaf0ed;
+}
+
+.delievery .delDetail .delDetailTitle .step-2 span:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 38px;
+  height: 1px;
+  top: 50%;
+  right: 21px;
+  background: #eaf0ed;
+}
+
+.delievery .delDetail .delDetailTitle .step-2 span {
+  position: relative;
+  margin-left: 34px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #3f5d45;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.delievery .delDetail .delDetailTitle .step-3 span:nth-child(1) {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+.delievery .delDetail .delDetailTitle .step-3 span:nth-child(2) {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+.delievery .delDetail .delDetailTitle .step-3 span:nth-child(3) {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  border: 4px double #3f5d45;
+}
+
+.delievery .delDetail .delDetailTitle .step-3 span:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 38px;
+  height: 1px;
+  top: 50%;
+  right: 21px;
+  background: #eaf0ed;
+}
+
+.delievery .delDetail .delDetailTitle .step-3 span:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 38px;
+  height: 1px;
+  top: 50%;
+  right: 21px;
+  background: #eaf0ed;
+}
+
+.delievery .delDetail .delDetailTitle .step-3 span {
+  position: relative;
+  margin-left: 34px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #3f5d45;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.delievery .delDetail .delDetailTitle .progress {
+  height: 50px;
+  line-height: 50px;
 }
 
 .delievery .cartList {
