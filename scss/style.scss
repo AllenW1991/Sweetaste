@@ -900,6 +900,7 @@ footer {
       max-height: 270px;
       overflow: scroll;
       padding: 16px 20px;
+      border: 1px solid #eaf0ed;
       li {
         cursor: pointer;
         color: #8da291;
@@ -926,9 +927,9 @@ footer {
       }
     }
 
-    // ul::-webkit-scrollbar {
-    //   display: none; /* Chrome Safari */
-    // }
+    ul::-webkit-scrollbar {
+      display: none;
+    }
   }
   .cartSummaryLight {
     height: 193px;
@@ -982,5 +983,70 @@ footer {
       li {
       }
     }
+  }
+}
+.success {
+  position: relative;
+  .progress {
+
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+    span {
+      margin: 0 40px;
+      position: relative;
+      display: inline-block;
+      background: #eaf0ed;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 8px;
+    }
+    span:nth-child(4)::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      width: 85px;
+      height: 2px;
+      background: #eaf0ed;
+    }
+    span:nth-child(3)::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      width: 85px;
+      height: 2px;
+      background: #eaf0ed;
+    }
+
+    p {
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 24px;
+      line-height: 65px;
+      text-align: center;
+      color: #3f5d45;
+      width: 300px;
+      height: 65px;
+      background: #ffe180;
+      font-weight: bold;
+    }
+    h1 {
+      margin-top: 120px;
+      font-size: 48px;
+      color: #eaf0ed;
+    }
+  }
+  img {
+    width: 940px;
+    height: 460px;
+    object-fit: cover;
   }
 }
