@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: -apple-system;
+  font-family: PingFangTC-Regular, sans-serif;
 }
 
 ul,
@@ -1058,6 +1058,9 @@ footer .mail .mailRight h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1084,7 +1087,6 @@ footer .mail .mailRight h4 {
 
 .delievery .delInfo .creditCardBack input {
   margin: 8px 0;
-  margin-bottom: 30px;
   padding-left: 20px;
   width: 160px;
   height: 56px;
@@ -1105,6 +1107,46 @@ footer .mail .mailRight h4 {
 }
 
 .delievery .delInfo .creditCard i {
+  color: #3f5d45;
+  position: absolute;
+  top: 54%;
+  right: 20px;
+}
+
+.delievery .delInfo .email {
+  margin-top: 30px;
+  position: relative;
+}
+
+.delievery .delInfo .email input {
+  margin: 8px 0;
+  padding-left: 20px;
+  width: 354px;
+  height: 56px;
+  font-size: 20px;
+}
+
+.delievery .delInfo .email i {
+  color: #3f5d45;
+  position: absolute;
+  top: 54%;
+  right: 20px;
+}
+
+.delievery .delInfo .taxId {
+  margin-top: 30px;
+  position: relative;
+}
+
+.delievery .delInfo .taxId input {
+  margin: 8px 0;
+  padding-left: 20px;
+  width: 354px;
+  height: 56px;
+  font-size: 20px;
+}
+
+.delievery .delInfo .taxId i {
   color: #3f5d45;
   position: absolute;
   top: 54%;
@@ -1178,8 +1220,24 @@ footer .mail .mailRight h4 {
   width: 380px;
 }
 
+.delievery .delInfo .infoAddr span {
+  font-size: 16px;
+  text-align: right;
+  display: inline-block;
+  width: 190px;
+}
+
+.delievery .delInfo .infoAddr span input {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+}
+
 .delievery .delInfo .infoAddr p {
+  display: inline-block;
   margin-bottom: 8px;
+  width: 180px;
 }
 
 .delievery .delInfo .infoAddr input {
@@ -1224,12 +1282,80 @@ footer .mail .mailRight h4 {
 
 .delievery .delDetail {
   padding: 30px 40px;
+  padding-bottom: 60px;
   width: 380px;
   height: auto;
   background: #3f5d45;
   color: #eaf0ed;
   margin-right: 20px;
   position: relative;
+}
+
+.delievery .delDetail .invoice2 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.delievery .delDetail .invoice2 span {
+  font-size: 20px;
+  text-align: center;
+  line-height: 56px;
+  display: inline-block;
+  width: 190px;
+  height: 56px;
+  background: #3f5d45;
+  border: 1px solid #eaf0ed;
+  -webkit-transition: all 0.2s 0s ease;
+  transition: all 0.2s 0s ease;
+}
+
+.delievery .delDetail .invoice2 span:nth-child(2) {
+  background: #eaf0ed;
+  color: #3f5d45;
+  font-weight: bold;
+}
+
+.delievery .delDetail .invoice2 span:nth-child(2) {
+  border-left: 0px;
+}
+
+.delievery .delDetail .invoice1 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.delievery .delDetail .invoice1 span {
+  font-size: 20px;
+  text-align: center;
+  line-height: 56px;
+  display: inline-block;
+  width: 190px;
+  height: 56px;
+  background: #3f5d45;
+  border: 1px solid #eaf0ed;
+  -webkit-transition: all 0.2s 0s ease;
+  transition: all 0.2s 0s ease;
+}
+
+.delievery .delDetail .invoice1 span:nth-child(1) {
+  background: #eaf0ed;
+  color: #3f5d45;
+  font-weight: bold;
+}
+
+.delievery .delDetail .invoice1 span:nth-child(2) {
+  border-left: 0px;
 }
 
 .delievery .delDetail .next {
@@ -1448,6 +1574,10 @@ footer .mail .mailRight h4 {
 
 .delievery .cartList ul li .cartListContent {
   font-size: 16px;
+}
+
+.delievery .cartList ul li .cartListContent span {
+  margin-left: 4px;
 }
 
 .delievery .cartList ul li .cartListContent p:nth-child(2) {

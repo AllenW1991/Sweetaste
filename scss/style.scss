@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: -apple-system;
+  font-family: PingFangTC-Regular, sans-serif;
 }
 ul,
 ol {
@@ -776,6 +776,7 @@ footer {
   margin: 0 auto;
   margin-bottom: 125px;
   display: flex;
+  align-items: start;
   justify-content: center;
   width: 800px;
   height: auto;
@@ -790,7 +791,6 @@ footer {
       position: relative;
       input {
         margin: 8px 0;
-        margin-bottom: 30px;
         padding-left: 20px;
         width: 160px;
         height: 56px;
@@ -800,6 +800,43 @@ footer {
     .creditCard {
       margin-top: 30px;
       position: relative;
+      input {
+        margin: 8px 0;
+        padding-left: 20px;
+        width: 354px;
+        height: 56px;
+        font-size: 20px;
+      }
+
+      i {
+        color: #3f5d45;
+        position: absolute;
+        top: 54%;
+        right: 20px;
+      }
+    }
+    .email {
+      margin-top: 30px;
+      position: relative;
+      input {
+        margin: 8px 0;
+        padding-left: 20px;
+        width: 354px;
+        height: 56px;
+        font-size: 20px;
+      }
+
+      i {
+        color: #3f5d45;
+        position: absolute;
+        top: 54%;
+        right: 20px;
+      }
+    }
+    .taxId {
+      margin-top: 30px;
+      position: relative;
+
       input {
         margin: 8px 0;
         padding-left: 20px;
@@ -872,8 +909,23 @@ footer {
     }
     .infoAddr {
       width: 380px;
+      span {
+        font-size: 16px;
+        text-align: right;
+        display: inline-block;
+        width: 190px;
+
+        input {
+          position: relative;
+          top: 2px;
+          width: 16px;
+          height: 16px;
+        }
+      }
       p {
+        display: inline-block;
         margin-bottom: 8px;
+        width: 180px;
       }
       input {
         margin: 8px 0;
@@ -913,12 +965,62 @@ footer {
   }
   .delDetail {
     padding: 30px 40px;
+    padding-bottom: 60px;
     width: 380px;
     height: auto;
     background: #3f5d45;
     color: #eaf0ed;
     margin-right: 20px;
     position: relative;
+    .invoice2 {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      span {
+        font-size: 20px;
+        text-align: center;
+        line-height: 56px;
+        display: inline-block;
+        width: 190px;
+        height: 56px;
+        background: #3f5d45;
+        border: 1px solid #eaf0ed;
+        transition: all 0.2s 0s ease;
+      }
+      span:nth-child(2) {
+        background: #eaf0ed;
+        color: #3f5d45;
+        font-weight: bold;
+      }
+      span:nth-child(2) {
+        border-left: 0px;
+      }
+    }
+    .invoice1 {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      span {
+        font-size: 20px;
+        text-align: center;
+        line-height: 56px;
+        display: inline-block;
+        width: 190px;
+        height: 56px;
+        background: #3f5d45;
+        border: 1px solid #eaf0ed;
+        transition: all 0.2s 0s ease;
+      }
+      span:nth-child(1) {
+        background: #eaf0ed;
+        color: #3f5d45;
+        font-weight: bold;
+      }
+      span:nth-child(2) {
+        border-left: 0px;
+      }
+    }
     .next {
       line-height: 65px;
       text-align: center;
@@ -1112,6 +1214,9 @@ footer {
         margin: 8px 0;
         .cartListContent {
           font-size: 16px;
+          span {
+            margin-left: 4px;
+          }
           p:nth-child(2) {
             margin: 2px 0;
             font-weight: bold;
