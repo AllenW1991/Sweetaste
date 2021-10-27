@@ -23,6 +23,13 @@ a {
   position: relative;
 }
 
+.container .wrap .main img {
+  width: 940px;
+  height: 496px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container .wrap .main_cards {
   position: absolute;
   top: 400px;
@@ -76,6 +83,20 @@ a {
           justify-content: space-between;
 }
 
+.nav i {
+  font-size: 36px;
+  color: #3f5d45;
+  display: none;
+}
+
+.nav .desktop {
+  width: 220px;
+}
+
+.nav .mobile {
+  display: none;
+}
+
 .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,6 +105,115 @@ a {
 
 .nav ul li {
   margin-left: 60px;
+}
+
+@media (max-width: 1px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+  }
+  .container .intro {
+    position: relative;
+  }
+  .container .intro .card {
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+  }
+  .container .intro .card .pic-left {
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+  }
+  .container .intro .card .pic-left img {
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+  }
+  .container .intro .card .pic-left .content {
+    width: 100%;
+    max-width: 375px;
+    position: relative;
+  }
+  .container .intro .card .pic-right {
+    position: relative;
+  }
+  .container .wrap {
+    width: 100%;
+    max-width: 375px;
+  }
+  .container .wrap .main {
+    width: 100%;
+    max-width: 375px;
+    max-height: 277px;
+  }
+  .container .wrap .main .main_cards {
+    position: relative;
+  }
+  .container .wrap .main .main_cards li {
+    max-width: 125px;
+    max-height: 180px;
+    background: no-repeat;
+  }
+  .container .wrap .main .main_cards li a {
+    line-height: inherit;
+    max-width: 125px;
+  }
+  .container .nav {
+    margin: 0;
+    line-height: 18px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    max-width: 375px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .nav .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: block;
+    height: 20px;
+    margin-right: 76px;
+    margin-left: 76px;
+  }
+  .container .nav .desktop {
+    display: none;
+  }
+  .container .nav ul {
+    margin: 0;
+    padding: 0;
+    width: 24px;
+  }
+  .container .nav ul li {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .container .nav ul li:nth-child(4) {
+    display: block;
+  }
+  .container .nav i {
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+  }
+  .wrap .main img {
+    max-width: 375px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .intro {
@@ -1220,24 +1350,10 @@ footer .mail .mailRight h4 {
   width: 380px;
 }
 
-.delievery .delInfo .infoAddr span {
-  font-size: 16px;
-  text-align: right;
-  display: inline-block;
-  width: 190px;
-}
-
-.delievery .delInfo .infoAddr span input {
-  position: relative;
-  top: 2px;
-  width: 16px;
-  height: 16px;
-}
-
 .delievery .delInfo .infoAddr p {
   display: inline-block;
   margin-bottom: 8px;
-  width: 180px;
+  width: 190px;
 }
 
 .delievery .delInfo .infoAddr input {
@@ -1249,6 +1365,46 @@ footer .mail .mailRight h4 {
 }
 
 .delievery .delInfo .infoAddr select {
+  margin-right: 1px;
+  font-size: 20px;
+  height: 56px;
+  width: 186px;
+  padding-left: 20px;
+}
+
+.delievery .delInfo .infoAddr1 {
+  width: 380px;
+}
+
+.delievery .delInfo .infoAddr1 span {
+  font-size: 16px;
+  text-align: right;
+  display: inline-block;
+  width: 190px;
+}
+
+.delievery .delInfo .infoAddr1 span input {
+  position: relative;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.delievery .delInfo .infoAddr1 p {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: 180px;
+}
+
+.delievery .delInfo .infoAddr1 input {
+  margin: 8px 0;
+  width: 354px;
+  height: 56px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.delievery .delInfo .infoAddr1 select {
   margin-right: 1px;
   font-size: 20px;
   height: 56px;

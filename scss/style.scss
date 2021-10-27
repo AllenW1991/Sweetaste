@@ -16,6 +16,13 @@ a {
   margin: 0 auto;
   .wrap {
     position: relative;
+    .main {
+      img {
+        width: 940px;
+        height: 496px;
+        object-fit: cover;
+      }
+    }
     .main_cards {
       position: absolute;
       top: 400px;
@@ -54,10 +61,124 @@ a {
   margin: 36.5px 0;
   display: flex;
   justify-content: space-between;
+  i {
+    font-size: 36px;
+    color: #3f5d45;
+    display: none;
+  }
+  .desktop {
+    width: 220px;
+  }
+  .mobile {
+    display: none;
+  }
   ul {
     display: flex;
     li {
       margin-left: 60px;
+    }
+  }
+}
+
+@media (max-width: 1px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+    .intro {
+      position: relative;
+      .card {
+        position: relative;
+        width: 100%;
+        max-width: 375px;
+        .pic-left {
+          position: relative;
+          width: 100%;
+          max-width: 375px;
+          img {
+            position: relative;
+            width: 100%;
+            max-width: 375px;
+          }
+          .content {
+            width: 100%;
+            max-width: 375px;
+            position: relative;
+          }
+        }
+        .pic-right {
+          position: relative;
+        }
+      }
+    }
+    .wrap {
+      width: 100%;
+      max-width: 375px;
+      .main {
+        width: 100%;
+        max-width: 375px;
+        max-height: 277px;
+        .main_cards {
+          position: relative;
+          li {
+            max-width: 125px;
+            max-height: 180px;
+            background: no-repeat;
+            a {
+              line-height: inherit;
+              max-width: 125px;
+            }
+          }
+        }
+      }
+    }
+    .nav {
+      margin: 0;
+      line-height: 18px;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 30px;
+      width: 100%;
+      max-width: 375px;
+      display: flex;
+      justify-content: center;
+      .mobile {
+        display: flex;
+        align-items: center;
+        display: block;
+        height: 20px;
+        margin-right: 76px;
+        margin-left: 76px;
+      }
+      .desktop {
+        display: none;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        width: 24px;
+        li {
+          margin: 0;
+          padding: 0;
+          display: none;
+        }
+        li:nth-child(4) {
+          display: block;
+        }
+      }
+      i {
+        cursor: pointer;
+        display: block;
+        font-size: 24px;
+      }
+    }
+  }
+  .wrap {
+    .main {
+      img {
+        max-width: 375px;
+        height: auto;
+        object-fit: contain;
+      }
     }
   }
 }
@@ -908,6 +1029,28 @@ footer {
       }
     }
     .infoAddr {
+      width: 380px;
+      p {
+        display: inline-block;
+        margin-bottom: 8px;
+        width: 190px;
+      }
+      input {
+        margin: 8px 0;
+        width: 354px;
+        height: 56px;
+        font-size: 20px;
+        padding-left: 20px;
+      }
+      select {
+        margin-right: 1px;
+        font-size: 20px;
+        height: 56px;
+        width: 186px;
+        padding-left: 20px;
+      }
+    }
+    .infoAddr1 {
       width: 380px;
       span {
         font-size: 16px;
