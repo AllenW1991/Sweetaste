@@ -25,6 +25,12 @@
     integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=='
     crossorigin='anonymous'
   />
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js'
+    integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=='
+    crossorigin='anonymous'
+  ></script>
+  <script src="./dessert.js"></script>
   <title>Sweetaste</title>
 </head>
 
@@ -237,9 +243,17 @@
 
   <div class="mobile">
     <div class="mobile-nav">
-      <i class="fas fa-bars"></i>
+      <i
+        class="fas fa-bars"
+        id="menu"
+      ></i>
+      <ul class="menu-inside">
+        <li>首頁</li>
+        <li>甜點</li>
+        <li>登入</li>
+      </ul>
       <img
-        src="./img/logotype-lg-dark.svg"
+        src="./img/logo-all-dark.svg"
         alt=""
         class="mobile-logo"
       >
@@ -288,26 +302,15 @@
           <h1 class="mobile-slogan-end"><span>想吃甜點</span><br>是不需要理由的。</h1>
         </ul>
       </div>
-      <div class="mobile-fav">
+      <div class="mobile-fav-list">
         <ul>
-          <li><span>本日精選</span><img
-              src="./img/favorite_border.png"
-              alt=""
-            ><img
-              src=""
-              alt=""
-            >
-            <p>
-              <span>焦糖瑪卡龍</span>
-              <span>NT$ 450</span>
-              <span>加入購物車</span>
-            </p>
-          </li>
-          <li><span>本日精選</span><img
-              src="./img/favorite_border.png"
-              alt=""
-            ><img
-              src=""
+          <li>
+            <div class="mobile-fav"> <span>本日精選</span><img
+                src="./img/favorite_border.png"
+                alt=""
+              ></div>
+            <img
+              src="./img/p-2.png"
               alt=""
             >
             <p>
@@ -316,11 +319,28 @@
               <span>加入購物車</span>
             </p>
           </li>
-          <li><span>本日精選</span><img
-              src="./img/favorite_border.png"
+          <li>
+            <div class="mobile-fav"> <span>本日精選</span><img
+                src="./img/favorite_border.png"
+                alt=""
+              ></div>
+            <img
+              src="./img/p-5.png"
               alt=""
-            ><img
-              src=""
+            >
+            <p>
+              <span>焦糖瑪卡龍</span>
+              <span>NT$ 450</span>
+              <span>加入購物車</span>
+            </p>
+          </li>
+          <li>
+            <div class="mobile-fav"> <span>本日精選</span><img
+                src="./img/favorite_border.png"
+                alt=""
+              ></div>
+            <img
+              src="./img/p-6.png"
               alt=""
             >
             <p>
@@ -339,6 +359,7 @@
           <img
             src="./img/logo-light.svg"
             alt=""
+            class="mobile-footer-logo"
           >
           <span>訂閱你我的甜蜜郵件</span>
         </div>
@@ -376,6 +397,8 @@
             alt=""
           >
         </div>
+        <span>© 2018 Sweetaste* All Rights Reserved</span>
+
       </div>
     </footer>
   </div>

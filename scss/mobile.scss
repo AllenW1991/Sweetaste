@@ -6,24 +6,41 @@
     // }
     font-family: sans-serif;
     display: block;
+    max-width: 375px;
     .mobile-nav {
+      z-index: 1;
+      top: 0px;
+      height: 50px;
+      background: #ffffff;
+      width: 375px;
+      position: fixed;
       display: flex;
       justify-content: space-evenly;
-      padding: 36px 0;
+      align-items: center;
+      .menu-inside {
+        display: none;
+      }
       i {
         color: #3f5d45;
         font-size: 20px;
+        position: relative;
+        display: inline-block;
       }
+
       .mobile-logo {
-        width: 115px;
-        height: 18px;
+        margin-left: 8px;
+        width: 165px;
+        height: 40px;
       }
       .mobile-cart {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
+        position: relative;
       }
     }
     .mobile-container {
+      position: relative;
+      top: 48px;
       .mobile-cards {
         display: flex;
         .mobile-card {
@@ -120,6 +137,150 @@
               width: 50px;
             }
           }
+        }
+      }
+      .mobile-fav-list {
+        ul {
+          padding: 0 37.5px;
+          li {
+            .mobile-fav {
+              position: absolute;
+              padding-left: 20px;
+              padding-right: 20px;
+              span {
+                writing-mode: vertical-lr;
+                margin-right: 192px;
+                background: #3f5d45;
+                color: #eaf0ed;
+                width: 38px;
+                height: 107px;
+                line-height: 38px;
+                text-align: center;
+                letter-spacing: 4px;
+              }
+              img {
+                margin-right: 20px;
+                margin-bottom: 70px;
+                width: 20px;
+                height: 20px;
+              }
+            }
+            p {
+              position: relative;
+              top: -5px;
+              width: 315px;
+              display: flex;
+              flex-wrap: wrap;
+              box-sizing: border-box;
+              margin-bottom: 30px;
+              span:nth-child(1) {
+                display: inline-block;
+                width: 183px;
+                height: 56px;
+                line-height: 56px;
+                text-align: center;
+                color: #3f5d45;
+                font-size: 20px;
+                border-right: 1px solid #eaf0ed;
+                border-left: 1px solid #eaf0ed;
+              }
+              span:nth-child(2) {
+                display: inline-block;
+                width: 114px;
+                height: 56px;
+                line-height: 56px;
+                text-align: center;
+                color: #3f5d45;
+                font-weight: bold;
+                font-size: 20px;
+                border-right: 1px solid #eaf0ed;
+              }
+              span:nth-child(3) {
+                display: inline-block;
+                width: 300px;
+                height: 56px;
+                text-align: center;
+                line-height: 56px;
+                font-weight: bold;
+                font-size: 24px;
+                color: #3f5d45;
+                background: #eaf0ed;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile-footer {
+    .mobile-mail {
+      background: #3f5d45;
+      padding: 30px 30px;
+      .mobile-mail-top {
+        font-size: 24px;
+        line-height: 40px;
+        color: #eaf0ed;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        .mobile-footer-logo {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+      }
+      .mobile-mail-input {
+        margin-top: 30px;
+        height: 56px;
+        position: relative;
+        input {
+          outline: none;
+          font-size: 24px;
+          width: 250px;
+          height: 56px;
+          padding-left: 60px;
+        }
+        img:nth-child(1) {
+          position: absolute;
+          left: 20px;
+          top: calc(50% - 10px);
+        }
+        span {
+          background: #ffe180;
+          display: inline-block;
+          width: 64px;
+          height: 58px;
+          position: absolute;
+          right: 2px;
+          top: 1px;
+          img {
+          }
+        }
+      }
+    }
+    .mobile-contact {
+      background: #eaf0ed;
+      padding: 30px;
+      color: #3f5d45;
+      font-size: 16px;
+      p {
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+      img {
+        width: 172px;
+        height: 27px;
+        margin-bottom: 40px;
+      }
+      .mobile-contact-social {
+        display: flex;
+        justify-content: left;
+        height: 32px;
+        margin-bottom: 23px;
+        img {
+          width: 32px;
+          height: 32px;
+          margin-right: 8px;
         }
       }
     }
