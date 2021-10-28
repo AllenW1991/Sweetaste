@@ -1,0 +1,127 @@
+@media (max-width: 376px) {
+  .mobile {
+    // img {
+    //   width: 100%;
+    //   height: auto;
+    // }
+    font-family: sans-serif;
+    display: block;
+    .mobile-nav {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 36px 0;
+      i {
+        color: #3f5d45;
+        font-size: 20px;
+      }
+      .mobile-logo {
+        width: 115px;
+        height: 18px;
+      }
+      .mobile-cart {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .mobile-container {
+      .mobile-cards {
+        display: flex;
+        .mobile-card {
+          position: relative;
+          top: -5px;
+          box-sizing: border-box;
+          display: inline-block;
+          width: 125px;
+          height: 180px;
+          writing-mode: vertical-lr;
+          line-height: 125px;
+          text-align: center;
+          background-image: url(../img/p-3.png);
+          a {
+            display: inline-block;
+            color: white;
+            background: #3f5d45c4;
+            width: 125px;
+            height: 180px;
+            transition: all 0.3s 0s ease;
+            letter-spacing: 4px;
+            font-size: 20px;
+          }
+          a:hover {
+            background: #ffe180;
+            color: #3f5d45;
+            font-weight: bold;
+          }
+        }
+        .mobile-card:nth-child(1) {
+          border-right: 1px solid #ffffff;
+          background-image: url(../img/p-6.png);
+        }
+        .mobile-card:nth-child(2) {
+          border-right: 1px solid #ffffff;
+          background-image: url(../img/p-4.png);
+        }
+      }
+      .mobile-main-pic {
+        width: 375px;
+        height: 277px;
+        object-fit: cover;
+      }
+      .mobile-intro {
+        .mobile-intro-cards {
+          li {
+            img {
+              width: 375px;
+              height: 250px;
+              object-fit: cover;
+            }
+            p {
+              position: relative;
+              top: -5px;
+              padding: 30px 30px;
+              background: #eaf0ed;
+              color: #8da291;
+              line-height: 32px;
+            }
+          }
+          h1 {
+            color: #3f5d45;
+            font-size: 24px;
+            text-align: center;
+            width: 196px;
+            height: 60px;
+            padding: 30px 90px;
+            margin-bottom: 15px;
+            line-height: 40px;
+            letter-spacing: 4px;
+            span {
+              position: relative;
+              right: 20px;
+            }
+            span::after {
+              position: absolute;
+              left: 85px;
+              top: 50%;
+              content: "";
+              width: 40px;
+              height: 1px;
+              background-color: #3f5d45;
+              display: inline-block;
+            }
+          }
+          .mobile-slogan-end {
+            width: 226px;
+            height: 60px;
+            span {
+              right: 40px;
+            }
+            span::after {
+              left: 110px;
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+} ;

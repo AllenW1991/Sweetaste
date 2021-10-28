@@ -216,6 +216,12 @@ a {
   }
 }
 
+@media (max-width: 376px) {
+  .desktop-show {
+    display: none;
+  }
+}
+
 .intro {
   margin-top: 227px;
 }
@@ -264,6 +270,7 @@ a {
 }
 
 .intro .productTitle span {
+  color: #3f5d45;
   display: inline-block;
   height: 56px;
   font-size: 20px;
@@ -1897,5 +1904,9 @@ footer .mail .mailRight h4 {
   height: 460px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.mobile {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

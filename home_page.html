@@ -16,6 +16,10 @@
     href="./scss/style.css"
   >
   <link
+    rel="stylesheet"
+    href="./scss/mobile.css"
+  >
+  <link
     rel='stylesheet'
     href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'
     integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=='
@@ -25,7 +29,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container desktop-show">
     <div class="nav">
       <i class="fas fa-bars"></i>
       <a href="">
@@ -74,7 +78,7 @@
       </div>
     </div>
   </div>
-  <div class="intro">
+  <div class="intro desktop-show">
     <div class="card">
       <div class="pic-left">
         <img
@@ -170,9 +174,7 @@
       </ul>
     </div>
   </div>
-
-
-  <footer>
+  <footer class="desktop-show">
     <div class="mail">
       <div class="mailRight">
         <img
@@ -231,6 +233,152 @@
       </div>
     </div>
   </footer>
+
+
+  <div class="mobile">
+    <div class="mobile-nav">
+      <i class="fas fa-bars"></i>
+      <img
+        src="./img/logotype-lg-dark.svg"
+        alt=""
+        class="mobile-logo"
+      >
+      <img
+        src="./img/shopping_cart.png"
+        alt=""
+        class="mobile-cart"
+      >
+    </div>
+    <div class="mobile-container">
+      <img
+        src="./img/1.jpeg"
+        alt=""
+        class="mobile-main-pic"
+      >
+      <ul class="mobile-cards">
+        <li class="mobile-card"><a href="">本日精選</a></li>
+        <li class="mobile-card"><a href="">人氣推薦</a></li>
+        <li class="mobile-card"><a href="">新品上市</a></li>
+      </ul>
+      <div class="mobile-intro">
+        <ul class="mobile-intro-cards">
+          <h1><span> 為什麼</span><br>選擇了做甜點?</h1>
+          <li><img
+              src="./img/2.jpg"
+              alt=""
+            >
+            <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+              <br>
+              <br>
+              是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+            </p>
+          </li>
+          <h1><span> 為什麼</span><br>一定要吃甜點?</h1>
+          <li>
+            <img
+              src="./img/3.jpg"
+              alt=""
+            >
+            <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+              <br>
+              <br>
+              是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+            </p>
+          </li>
+          <h1 class="mobile-slogan-end"><span>想吃甜點</span><br>是不需要理由的。</h1>
+        </ul>
+      </div>
+      <div class="mobile-fav">
+        <ul>
+          <li><span>本日精選</span><img
+              src="./img/favorite_border.png"
+              alt=""
+            ><img
+              src=""
+              alt=""
+            >
+            <p>
+              <span>焦糖瑪卡龍</span>
+              <span>NT$ 450</span>
+              <span>加入購物車</span>
+            </p>
+          </li>
+          <li><span>本日精選</span><img
+              src="./img/favorite_border.png"
+              alt=""
+            ><img
+              src=""
+              alt=""
+            >
+            <p>
+              <span>焦糖瑪卡龍</span>
+              <span>NT$ 450</span>
+              <span>加入購物車</span>
+            </p>
+          </li>
+          <li><span>本日精選</span><img
+              src="./img/favorite_border.png"
+              alt=""
+            ><img
+              src=""
+              alt=""
+            >
+            <p>
+              <span>焦糖瑪卡龍</span>
+              <span>NT$ 450</span>
+              <span>加入購物車</span>
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <footer class="mobile-footer">
+      <div class="mobile-mail">
+        <div class="mobile-mail-top">
+          <img
+            src="./img/logo-light.svg"
+            alt=""
+          >
+          <span>訂閱你我的甜蜜郵件</span>
+        </div>
+        <div class="mobile-mail-input">
+          <img
+            src="./img/mail-24px.png"
+            alt=""
+          >
+          <input type="text">
+          <span>
+            <img
+              src="./img/arrow_forward-24px.png"
+              alt=""
+            >
+          </span>
+        </div>
+      </div>
+      <div class="mobile-contact">
+        <img
+          src="./img/logotype-lg-dark.svg"
+          alt=""
+        >
+        <p>
+          07-1234-5678<br>
+          sweetaste@email.com<br>
+          800 高雄市新興區幸福路 520 號
+        </p>
+        <div class="mobile-contact-social">
+          <img
+            src="./img/ic-line@.svg"
+            alt=""
+          >
+          <img
+            src="./img/ic-facebook.svg"
+            alt=""
+          >
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
