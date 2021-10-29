@@ -185,10 +185,9 @@
         .mobile-invoice-info {
           width: 315px;
           .mobile-invoice-form {
-            width: 315px;
             border: 1px solid #eaf0ed;
-
-            span:nth-child(1) {
+            margin-bottom: 30px;
+            span:nth-child(2) {
               background: #eaf0ed;
               height: 56px;
               width: 153px;
@@ -198,9 +197,8 @@
               font-weight: bold;
               color: #3f5d45;
               line-height: 56px;
-              border-right: 1px solid #eaf0ed;
             }
-            span:nth-child(2) {
+            span:nth-child(1) {
               background: #3f5d45;
               height: 56px;
               width: 153px;
@@ -233,8 +231,28 @@
               }
             }
             li:nth-child(2) {
+              .mobile-addr {
+                display: flex;
+                justify-content: space-between;
+                color: aqua;
+                width: 315px;
+                margin-bottom: 8px;
+                select {
+                  width: 149px;
+                  height: 56px;
+                  outline: none;
+                  font-size: 16px;
+                  border: 0;
+                }
+              }
               input {
+                color: #8da291;
                 width: 295px;
+                height: 56px;
+                padding-left: 20px;
+                outline: none;
+                font-size: 16px;
+                border: 0;
               }
             }
             li:nth-child(3) {

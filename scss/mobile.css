@@ -201,10 +201,10 @@
     width: 315px;
   }
   .mobile .mobile-container .mobile-shipment .mobile-invoice-info .mobile-invoice-form {
-    width: 315px;
     border: 1px solid #eaf0ed;
+    margin-bottom: 30px;
   }
-  .mobile .mobile-container .mobile-shipment .mobile-invoice-info .mobile-invoice-form span:nth-child(1) {
+  .mobile .mobile-container .mobile-shipment .mobile-invoice-info .mobile-invoice-form span:nth-child(2) {
     background: #eaf0ed;
     height: 56px;
     width: 153px;
@@ -214,9 +214,8 @@
     font-weight: bold;
     color: #3f5d45;
     line-height: 56px;
-    border-right: 1px solid #eaf0ed;
   }
-  .mobile .mobile-container .mobile-shipment .mobile-invoice-info .mobile-invoice-form span:nth-child(2) {
+  .mobile .mobile-container .mobile-shipment .mobile-invoice-info .mobile-invoice-form span:nth-child(1) {
     background: #3f5d45;
     height: 56px;
     width: 153px;
@@ -254,8 +253,32 @@
     font-size: 16px;
     border: 0;
   }
+  .mobile .mobile-container .mobile-shipment .mobile-invoice-info ul li:nth-child(2) .mobile-addr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: aqua;
+    width: 315px;
+    margin-bottom: 8px;
+  }
+  .mobile .mobile-container .mobile-shipment .mobile-invoice-info ul li:nth-child(2) .mobile-addr select {
+    width: 149px;
+    height: 56px;
+    outline: none;
+    font-size: 16px;
+    border: 0;
+  }
   .mobile .mobile-container .mobile-shipment .mobile-invoice-info ul li:nth-child(2) input {
+    color: #8da291;
     width: 295px;
+    height: 56px;
+    padding-left: 20px;
+    outline: none;
+    font-size: 16px;
+    border: 0;
   }
   .mobile .mobile-container .mobile-shipment .mobile-invoice-info ul li:nth-child(3) input {
     width: 295px;
