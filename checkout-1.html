@@ -15,7 +15,10 @@
     rel="stylesheet"
     href="./scss/style.css"
   >
-
+  <link
+    rel="stylesheet"
+    href="./scss/mobile.css"
+  >
   <link
     rel='stylesheet'
     href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'
@@ -26,206 +29,342 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="nav">
-      <a href="">
-        <img
-          src="./img/logo-all-dark.svg"
-          alt=""
-          style="width: 220px;"
-        >
-      </a>
-      <ul>
-        <li><a href="">首頁</a></li>
-        <li><a href="">甜點</a></li>
-        <li><a href="">登入</a></li>
-        <li><a href="">
+  <div class="desktop">
+    <div class="container">
+      <div class="nav">
+        <a href="">
+          <img
+            src="./img/logo-all-dark.svg"
+            alt=""
+            style="width: 220px;"
+          >
+        </a>
+        <ul>
+          <li><a href="">首頁</a></li>
+          <li><a href="">甜點</a></li>
+          <li><a href="">登入</a></li>
+          <li><a href="">
+              <img
+                src="./img/shopping_cart.png"
+                alt=""
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="delievery">
+        <div class="delDetail">
+          <div class="delDetailTitle">
+            <h1>運送</h1>
+            <div class="progress step-1">
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </div>
+          </div>
+          <div class="delInfo ">
+            <div class="infoFirstName">
+              <p>姓氏</p>
+              <input
+                type="text"
+                placeholder="王"
+              >
+            </div>
+            <div class="infoLastName">
+              <p>名字</p>
+              <input
+                type="text"
+                placeholder="小明"
+              >
+            </div>
+            <div class="infoTel">
+              <p>電話</p>
+              <input
+                type="text"
+                placeholder="0912-345-678"
+              >
+            </div>
+            <div class="infoAddr">
+              <p>地址</p>
+              <select
+                name=""
+                id=""
+              >
+                <option value="">台北市</option>
+                <option value="">新北市</option>
+                <option value="">桃園縣</option>
+              </select>
+              <select
+                name=""
+                id=""
+              >
+                <option value="">板橋區</option>
+                <option value="">土城區</option>
+                <option value="">八德鎮</option>
+              </select>
+              <input
+                type="text"
+                placeholder="幸福路520號"
+              >
+            </div>
+          </div>
+          <span class="next">下一步</span>
+        </div>
+        <div class="delieveryRight">
+          <div class="cartSummaryLight">
+            <p>訂單摘要</p>
+            <div class="cal">
+              <p><span>小記</span><span>NT$ 2,700</span></p>
+              <p><span>運費</span><span>NT$ 300</span></p>
+              <p><span>總計</span><span>NT$ 3,000</span></p>
+            </div>
+          </div>
+          <div class="cartList">
+            <p class="cartListTitle">購物清單
+            </p>
+            <ul>
+              <li><img
+                  src="./img/p-1.png"
+                  alt=""
+                >
+                .<div class="cartListContent">
+                  <p>焦糖瑪卡龍 <span>(2)</span>
+                  </p>
+                  <p>NT$ 900</p>
+              </li>
+              <li><img
+                  src="./img/p-2.png"
+                  alt=""
+                >.<div class="cartListContent">
+                  <p>焦糖瑪卡龍 <span>(2)</span>
+                  </p>
+                  <p>NT$ 900</p>
+              </li>
+              <li><img
+                  src="./img/p-3.png"
+                  alt=""
+                >
+                <div class="cartListContent">
+                  <p>焦糖瑪卡龍 <span>(1)</span>
+                  </p>
+                  <p>NT$ 450</p>
+                </div>
+              </li>
+              <li><img
+                  src="./img/p-4.png"
+                  alt=""
+                >
+                <div class="cartListContent">
+                  <p>焦糖瑪卡龍 <span>(1)</span>
+                  </p>
+                  <p>NT$ 450</p>
+                </div>
+              </li>
+          </div>
+        </div>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div class="mail">
+        <div class="mailRight">
+          <img
+            src="./img/logo-light.svg"
+            alt=""
+          >
+          <h4>
+            訂閱你我的甜蜜郵件
+          </h4>
+        </div>
+        <div class="search">
+          <img
+            src="./img/mail-24px.png"
+            class="mailImg"
+            alt=""
+          >
+          <input type="text">
+          <div class="send">
             <img
-              src="./img/shopping_cart.png"
+              src="./img/arrow_forward-24px.png"
+              class="arrowForward"
               alt=""
             >
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="delievery">
-      <div class="delDetail">
-        <div class="delDetailTitle">
-          <h1>運送</h1>
-          <div class="progress step-1">
-            <span> </span>
-            <span> </span>
-            <span> </span>
           </div>
-        </div>
-        <div class="delInfo ">
-          <div class="infoFirstName">
-            <p>姓氏</p>
-            <input
-              type="text"
-              placeholder="王"
-            >
-          </div>
-          <div class="infoLastName">
-            <p>名字</p>
-            <input
-              type="text"
-              placeholder="小明"
-            >
-          </div>
-          <div class="infoTel">
-            <p>電話</p>
-            <input
-              type="text"
-              placeholder="0912-345-678"
-            >
-          </div>
-          <div class="infoAddr">
-            <p>地址</p>
-            <select
-              name=""
-              id=""
-            >
-              <option value="">台北市</option>
-              <option value="">新北市</option>
-              <option value="">桃園縣</option>
-            </select>
-            <select
-              name=""
-              id=""
-            >
-              <option value="">板橋區</option>
-              <option value="">土城區</option>
-              <option value="">八德鎮</option>
-            </select>
-            <input
-              type="text"
-              placeholder="幸福路520號"
-            >
-          </div>
-        </div>
-        <span class="next">下一步</span>
-      </div>
-      <div class="delieveryRight">
-        <div class="cartSummaryLight">
-          <p>訂單摘要</p>
-          <div class="cal">
-            <p><span>小記</span><span>NT$ 2,700</span></p>
-            <p><span>運費</span><span>NT$ 300</span></p>
-            <p><span>總計</span><span>NT$ 3,000</span></p>
-          </div>
-        </div>
-        <div class="cartList">
-          <p class="cartListTitle">購物清單
-          </p>
-          <ul>
-            <li><img
-                src="./img/p-1.png"
-                alt=""
-              >
-              .<div class="cartListContent">
-                <p>焦糖瑪卡龍 <span>(2)</span>
-                </p>
-                <p>NT$ 900</p>
-            </li>
-            <li><img
-                src="./img/p-2.png"
-                alt=""
-              >.<div class="cartListContent">
-                <p>焦糖瑪卡龍 <span>(2)</span>
-                </p>
-                <p>NT$ 900</p>
-            </li>
-            <li><img
-                src="./img/p-3.png"
-                alt=""
-              >
-              <div class="cartListContent">
-                <p>焦糖瑪卡龍 <span>(1)</span>
-                </p>
-                <p>NT$ 450</p>
-              </div>
-            </li>
-            <li><img
-                src="./img/p-4.png"
-                alt=""
-              >
-              <div class="cartListContent">
-                <p>焦糖瑪卡龍 <span>(1)</span>
-                </p>
-                <p>NT$ 450</p>
-              </div>
-            </li>
-
         </div>
       </div>
-      </ul>
-    </div>
-  </div>
-  </div>
-
-  </div>
-  <footer>
-    <div class="mail">
-      <div class="mailRight">
-        <img
-          src="./img/logo-light.svg"
-          alt=""
-        >
-        <h4>
-          訂閱你我的甜蜜郵件
-        </h4>
-      </div>
-      <div class="search">
-        <img
-          src="./img/mail-24px.png"
-          class="mailImg"
-          alt=""
-        >
-        <input type="text">
-        <div class="send">
+      <div class="contact">
+        <div class="info">
           <img
-            src="./img/arrow_forward-24px.png"
-            class="arrowForward"
+            src='./img/logotype-lg-dark.svg'
+            alt=""
+          >
+          <ul>
+            <li>01-2345-678</li>
+            <li>sweetaste@email.com</li>
+            <li>800 高雄市新興區幸福路520號</li>
+            <div class="icon">
+              <img
+                src="./img/ic-line@.svg"
+                alt=""
+              >
+              <img
+                src="./img/ic-facebook.svg"
+                alt=""
+              >
+            </div>
+          </ul>
+
+
+        </div>
+        <div class="slogan">
+          <h4>
+            今天是個｜<br>&emsp;吃甜點的好日子。
+          </h4>
+          <span>
+            © 2021 Sweetaste* All Rights Reserved
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="mobile">
+    <div class="mobile-nav">
+      <i
+        class="fas fa-bars"
+        id="menu"
+      ></i>
+      <ul class="menu-inside">
+        <li>首頁</li>
+        <li>甜點</li>
+        <li>登入</li>
+      </ul>
+      <img
+        src="./img/logo-all-dark.svg"
+        alt=""
+        class="mobile-logo"
+      >
+      <img
+        src="./img/shopping_cart.png"
+        alt=""
+        class="mobile-cart"
+      >
+    </div>
+    <div class="mobile-container">
+      <div class="mobile-shipment">
+        <div class="mobile-shipment-title">
+          <h1>運送</h1>
+          <div class="mobile-process">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="mobile-shipment-info">
+          <ul>
+            <li>
+              <h3>姓氏</h3><input
+                type="text"
+                placeholder="王"
+              >
+            </li>
+            <li>
+              <h3>名字</h3><input
+                type="text"
+                placeholder="小明"
+              >
+            </li>
+            <li>
+              <h3>電話</h3><input
+                type="text"
+                placeholder="0912-345-678"
+              >
+            </li>
+            <li>
+              <h3>地址</h3>
+              <div class="mobile-addr">
+                <select
+                  name=""
+                  id=""
+                >
+                  <option value="">縣市</option>
+                  <option value="">台北市</option>
+                  <option value="">新北市</option>
+                  <option value="">桃園市</option>
+                  <option value="">新竹縣</option>
+                </select>
+                <select
+                  name=""
+                  id=""
+                >
+                  <option value="">信義區</option>
+                  <option value="">大安區</option>
+                  <option value="">萬華區</option>
+                  <option value="">中正區</option>
+                </select>
+
+              </div>
+              <input
+                type="text"
+                placeholder="幸福路 520 號"
+              >
+            </li>
+          </ul>
+        </div>
+      </div> <span class="mobile-next">下一步</span>
+
+    </div>
+    <footer class="mobile-footer">
+      <div class="mobile-mail">
+        <div class="mobile-mail-top">
+          <img
+            src="./img/logo-light.svg"
+            alt=""
+            class="mobile-footer-logo"
+          >
+          <span>訂閱你我的甜蜜郵件</span>
+        </div>
+        <div class="mobile-mail-input">
+          <img
+            src="./img/mail-24px.png"
+            alt=""
+          >
+          <input type="text">
+          <span>
+            <img
+              src="./img/arrow_forward-24px.png"
+              alt=""
+            >
+          </span>
+        </div>
+      </div>
+      <div class="mobile-contact">
+        <img
+          src="./img/logotype-lg-dark.svg"
+          alt=""
+        >
+        <p>
+          07-1234-5678<br>
+          sweetaste@email.com<br>
+          800 高雄市新興區幸福路 520 號
+        </p>
+        <div class="mobile-contact-social">
+          <img
+            src="./img/ic-line@.svg"
+            alt=""
+          >
+          <img
+            src="./img/ic-facebook.svg"
             alt=""
           >
         </div>
-      </div>
-    </div>
-    <div class="contact">
-      <div class="info">
-        <img
-          src='./img/logotype-lg-dark.svg'
-          alt=""
-        >
-        <ul>
-          <li>01-2345-678</li>
-          <li>sweetaste@email.com</li>
-          <li>800 高雄市新興區幸福路520號</li>
-          <div class="icon">
-            <img
-              src="./img/ic-line@.svg"
-              alt=""
-            >
-            <img
-              src="./img/ic-facebook.svg"
-              alt=""
-            >
-          </div>
-        </ul>
-
+        <span>© 2018 Sweetaste* All Rights Reserved</span>
 
       </div>
-      <div class="slogan">
-        <h4>
-          今天是個｜<br>&emsp;吃甜點的好日子。
-        </h4>
-        <span>
-          © 2021 Sweetaste* All Rights Reserved
-        </span>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
+
+
 </body>
 
 </html>
