@@ -49,6 +49,78 @@
     margin: 0 auto;
     width: 100%;
   }
+  .mobile .mobile-container .mobile-success-keepshopping {
+    display: inline-block;
+    height: 65px;
+    width: 100%;
+    text-align: center;
+    line-height: 65px;
+    font-weight: bold;
+    color: #3f5d45;
+    font-size: 24px;
+    background: #ffe180;
+  }
+  .mobile .mobile-container .mobile-success {
+    position: relative;
+    bottom: -4px;
+  }
+  .mobile .mobile-container .mobile-success .mobile-success-text {
+    position: absolute;
+    top: 45%;
+    right: calc(50% - 100px);
+    width: 200px;
+    color: #3f5d45;
+    text-align: center;
+  }
+  .mobile .mobile-container .mobile-success .mobile-success-text h1 {
+    font-size: 36px;
+  }
+  .mobile .mobile-container .mobile-success .mobile-success-text .mobile-success-progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 33px;
+  }
+  .mobile .mobile-container .mobile-success .mobile-success-text .mobile-success-progress span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #3f5d45;
+    border-radius: 50%;
+    position: relative;
+  }
+  .mobile .mobile-container .mobile-success .mobile-success-text .mobile-success-progress span i {
+    font-size: 20px;
+    color: #eaf0ed;
+    line-height: 30px;
+  }
+  .mobile .mobile-container .mobile-success .mobile-success-text .mobile-success-progress span:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1px;
+    top: 16px;
+    right: 28px;
+    background: #3f5d45;
+  }
+  .mobile .mobile-container .mobile-success .mobile-success-text .mobile-success-progress span:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1px;
+    top: 16px;
+    right: 28px;
+    background: #3f5d45;
+  }
+  .mobile .mobile-container .mobile-success img {
+    width: 375px;
+    height: 518px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .mobile .mobile-container .mobile-next {
     position: relative;
     top: 0px;
@@ -59,7 +131,7 @@
     text-align: center;
     line-height: 65px;
     font-weight: bold;
-    color: #3F5D45;
+    color: #3f5d45;
     font-size: 24px;
   }
   .mobile .mobile-container .mobile-shipment {

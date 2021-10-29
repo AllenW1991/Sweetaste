@@ -15,7 +15,16 @@
     rel="stylesheet"
     href="./scss/style.css"
   >
-
+  <link
+    rel="stylesheet"
+    href="./scss/mobile.css"
+  >
+  <link
+    rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'
+    integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=='
+    crossorigin='anonymous'
+  />
   <link
     rel='stylesheet'
     href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'
@@ -26,106 +35,200 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="nav">
-      <a href="">
-        <img
-          src="./img/logo-all-dark.svg"
-          alt=""
-          style="width: 220px;"
-        >
-      </a>
-      <ul>
-        <li><a href="">首頁</a></li>
-        <li><a href="">甜點</a></li>
-        <li><a href="">登入</a></li>
-        <li><a href="">
-            <img
-              src="./img/shopping_cart.png"
-              alt=""
-            >
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="success">
-      <img
-        src='./img/success2.jpg'
-        alt=""
-      >
-      <div class="sucessInfo">
-        <div class="progress">
-          <h1>付款成功</h1>
-          <span><i class="fas fa-check"></i></span>
-          <span><i class="fas fa-check"></i></span>
-          <span><i class="fas fa-check"></i></span>
-          <p>繼續逛逛</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="mail">
-      <div class="mailRight">
-        <img
-          src="./img/logo-light.svg"
-          alt=""
-        >
-        <h4>
-          訂閱你我的甜蜜郵件
-        </h4>
-      </div>
-      <div class="search">
-        <img
-          src="./img/mail-24px.png"
-          class="mailImg"
-          alt=""
-        >
-        <input type="text">
-        <div class="send">
+  <div class="desktop">
+    <div class="container">
+      <div class="nav">
+        <a href="">
           <img
-            src="./img/arrow_forward-24px.png"
-            class="arrowForward"
+            src="./img/logo-all-dark.svg"
+            alt=""
+            style="width: 220px;"
+          >
+        </a>
+        <ul>
+          <li><a href="">首頁</a></li>
+          <li><a href="">甜點</a></li>
+          <li><a href="">登入</a></li>
+          <li><a href="">
+              <img
+                src="./img/shopping_cart.png"
+                alt=""
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="success">
+        <img
+          src='./img/success2.jpg'
+          alt=""
+        >
+        <div class="sucessInfo">
+          <div class="progress">
+            <h1>付款成功</h1>
+            <span><i class="fas fa-check"></i></span>
+            <span><i class="fas fa-check"></i></span>
+            <span><i class="fas fa-check"></i></span>
+            <p>繼續逛逛</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="mail">
+        <div class="mailRight">
+          <img
+            src="./img/logo-light.svg"
             alt=""
           >
+          <h4>
+            訂閱你我的甜蜜郵件
+          </h4>
         </div>
-      </div>
-    </div>
-    <div class="contact">
-      <div class="info">
-        <img
-          src='./img/logotype-lg-dark.svg'
-          alt=""
-        >
-        <ul>
-          <li>01-2345-678</li>
-          <li>sweetaste@email.com</li>
-          <li>800 高雄市新興區幸福路520號</li>
-          <div class="icon">
+        <div class="search">
+          <img
+            src="./img/mail-24px.png"
+            class="mailImg"
+            alt=""
+          >
+          <input type="text">
+          <div class="send">
             <img
-              src="./img/ic-line@.svg"
-              alt=""
-            >
-            <img
-              src="./img/ic-facebook.svg"
+              src="./img/arrow_forward-24px.png"
+              class="arrowForward"
               alt=""
             >
           </div>
-        </ul>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="info">
+          <img
+            src='./img/logotype-lg-dark.svg'
+            alt=""
+          >
+          <ul>
+            <li>01-2345-678</li>
+            <li>sweetaste@email.com</li>
+            <li>800 高雄市新興區幸福路520號</li>
+            <div class="icon">
+              <img
+                src="./img/ic-line@.svg"
+                alt=""
+              >
+              <img
+                src="./img/ic-facebook.svg"
+                alt=""
+              >
+            </div>
+          </ul>
 
 
+        </div>
+        <div class="slogan">
+          <h4>
+            今天是個｜<br>&emsp;吃甜點的好日子。
+          </h4>
+          <span>
+            © 2021 Sweetaste* All Rights Reserved
+          </span>
+        </div>
       </div>
-      <div class="slogan">
-        <h4>
-          今天是個｜<br>&emsp;吃甜點的好日子。
-        </h4>
-        <span>
-          © 2021 Sweetaste* All Rights Reserved
-        </span>
-      </div>
+    </footer>
+  </div>
+
+
+  <div class="mobile">
+    <div class="mobile-nav">
+      <i
+        class="fas fa-bars"
+        id="menu"
+      ></i>
+      <ul class="menu-inside">
+        <li>首頁</li>
+        <li>甜點</li>
+        <li>登入</li>
+      </ul>
+      <img
+        src="./img/logo-all-dark.svg"
+        alt=""
+        class="mobile-logo"
+      >
+      <img
+        src="./img/shopping_cart.png"
+        alt=""
+        class="mobile-cart"
+      >
     </div>
-  </footer>
+    <div class="mobile-container">
+      <div class="mobile-success">
+        <img
+          src="./img/success.jfif"
+          alt=""
+        >
+        <div class="mobile-success-text">
+          <div class="mobile-success-progress">
+            <span><i class="fas fa-check"></i></span>
+            <span><i class="fas fa-check"></i></span>
+            <span><i class="fas fa-check"></i></span>
+          </div>
+          <h1>付款成功</h1>
+        </div>
+      </div>
+      <span class="mobile-success-keepshopping">繼續逛逛</span>
+    </div>
+    <footer class="mobile-footer">
+      <div class="mobile-mail">
+        <div class="mobile-mail-top">
+          <img
+            src="./img/logo-light.svg"
+            alt=""
+            class="mobile-footer-logo"
+          >
+          <span>訂閱你我的甜蜜郵件</span>
+        </div>
+        <div class="mobile-mail-input">
+          <img
+            src="./img/mail-24px.png"
+            alt=""
+          >
+          <input type="text">
+          <span>
+            <img
+              src="./img/arrow_forward-24px.png"
+              alt=""
+            >
+          </span>
+        </div>
+      </div>
+      <div class="mobile-contact">
+        <img
+          src="./img/logotype-lg-dark.svg"
+          alt=""
+        >
+        <p>
+          07-1234-5678<br>
+          sweetaste@email.com<br>
+          800 高雄市新興區幸福路 520 號
+        </p>
+        <div class="mobile-contact-social">
+          <img
+            src="./img/ic-line@.svg"
+            alt=""
+          >
+          <img
+            src="./img/ic-facebook.svg"
+            alt=""
+          >
+        </div>
+        <span>© 2018 Sweetaste* All Rights Reserved</span>
+
+      </div>
+    </footer>
+  </div>
+
+
 </body>
 
 </html>
