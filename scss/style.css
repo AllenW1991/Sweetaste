@@ -1046,6 +1046,10 @@ footer .mail .mailRight h4 {
   width: 620px;
 }
 
+.cart .cartProducts ul .not-active {
+  display: none;
+}
+
 .cart .cartProducts ul i {
   line-height: 130px;
 }
