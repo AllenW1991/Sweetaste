@@ -25,6 +25,12 @@
     integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=='
     crossorigin='anonymous'
   />
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js'
+    integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=='
+    crossorigin='anonymous'
+  ></script>
+  <script src="./dessert.js"></script>
   <title>CheckOut-Stpe1</title>
 </head>
 
@@ -78,10 +84,11 @@
               >
             </div>
             <div class="infoTel">
-              <p>電話</p>
+              <p>聯絡電話</p>
               <input
                 type="text"
                 placeholder="0912-345-678"
+                id="phoneNumber"
               >
             </div>
             <div class="infoAddr">
@@ -108,7 +115,9 @@
               >
             </div>
           </div>
-          <span class="next">下一步</span>
+          <!-- <a href="https://allenw1991.github.io/dessertStore_reMaster/checkout-2.html"> -->
+            <span class="next" id="next-1">下一步</span>
+          <!-- </a> -->
         </div>
         <div class="delieveryRight">
           <div class="cartSummaryLight">

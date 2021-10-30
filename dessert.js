@@ -184,4 +184,20 @@ $(function () {
     $("#totalPrice").text(`NT$ ` + addship);
 
   })
+
+
+  $("#next-1").on("click", function () {
+    let phoneNumberInput = $("#phoneNumber").val();
+    let phoneNumber = /09\d{2}-\d{3}-\d{3}/;
+
+    if (phoneNumber.test(phoneNumberInput)) {
+      $(location).attr("href", "https://allenw1991.github.io/dessertStore_reMaster/checkout-2.html")
+    } else {
+      alert("請輸入正確格式聯絡電話或手機")
+
+    };
+    
+  })
+
+
 })
