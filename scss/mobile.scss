@@ -1,4 +1,7 @@
 @media (max-width: 376px) {
+  html{
+    max-width: 375px;
+  }
   .desktop {
     display: none;
   }

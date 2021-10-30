@@ -14,6 +14,8 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
+  position: relative;
+
   .wrap {
     position: relative;
     .main {
@@ -63,7 +65,7 @@ a {
   display: flex;
   justify-content: space-between;
   i {
-    font-size: 36px;
+    font-size: 40px;
     color: #3f5d45;
     display: none;
   }
@@ -77,109 +79,15 @@ a {
     display: flex;
     li {
       margin-left: 60px;
-    }
-  }
-}
-
-@media (max-width: 1px) {
-  .container {
-    width: 100%;
-    max-width: 375px;
-    .intro {
-      position: relative;
-      .card {
-        position: relative;
-        width: 100%;
-        max-width: 375px;
-        .pic-left {
-          position: relative;
-          width: 100%;
-          max-width: 375px;
-          img {
-            position: relative;
-            width: 100%;
-            max-width: 375px;
-          }
-          .content {
-            width: 100%;
-            max-width: 375px;
-            position: relative;
-          }
-        }
-        .pic-right {
-          position: relative;
-        }
-      }
-    }
-    .wrap {
-      width: 100%;
-      max-width: 375px;
-      .main {
-        width: 100%;
-        max-width: 375px;
-        max-height: 277px;
-        .main_cards {
-          position: relative;
-          li {
-            max-width: 125px;
-            max-height: 180px;
-            background: no-repeat;
-            a {
-              line-height: inherit;
-              max-width: 125px;
-            }
-          }
-        }
-      }
-    }
-    .nav {
-      margin: 0;
-      line-height: 18px;
-      text-align: center;
-      box-sizing: border-box;
-      padding: 30px;
-      width: 100%;
-      max-width: 375px;
-      display: flex;
-      justify-content: center;
-      .mobile {
-        display: flex;
-        align-items: center;
-        display: block;
-        height: 20px;
-        margin-right: 76px;
-        margin-left: 76px;
-      }
-      .desktop {
-        display: none;
-      }
-      ul {
-        margin: 0;
-        padding: 0;
-        width: 24px;
-        li {
-          margin: 0;
-          padding: 0;
-          display: none;
-        }
-        li:nth-child(4) {
-          display: block;
-        }
-      }
-      i {
-        cursor: pointer;
-        display: block;
-        font-size: 24px;
-      }
-    }
-  }
-  .wrap {
-    .main {
+      height: 32px;
+      transition: all 0.2s 0s ease;
+      font-size: 20px;
       img {
-        max-width: 375px;
-        height: auto;
-        object-fit: contain;
+        width: 28px;
       }
+    }
+    li:hover {
+      border-bottom: 4px solid #3f5d45;
     }
   }
 }
@@ -233,6 +141,29 @@ a {
     }
   }
   .productsList {
+    .product-pages {
+      display: flex;
+      justify-content: right;
+      span {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border: 1px solid #eaf0ed;
+        font-size: 20px;
+        img {
+          position: relative;
+          top: 6px;
+        }
+      }
+      a:nth-child(2) {
+        span {
+          background: #3f5d45;
+          color: #eaf0ed;
+        }
+      }
+    }
     ul {
       display: flex;
       justify-content: center;
@@ -406,6 +337,8 @@ a {
     }
   }
   .productTitle {
+    position: relative;
+    top: -4px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -602,6 +535,7 @@ footer {
       img {
         width: 172px;
         height: 27px;
+        cursor: pointer;
       }
       ul {
         height: 50px;

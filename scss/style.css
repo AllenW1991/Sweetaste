@@ -17,6 +17,7 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
+  position: relative;
 }
 
 .container .wrap {
@@ -85,7 +86,7 @@ a {
 }
 
 .nav i {
-  font-size: 36px;
+  font-size: 40px;
   color: #3f5d45;
   display: none;
 }
@@ -106,115 +107,18 @@ a {
 
 .nav ul li {
   margin-left: 60px;
+  height: 32px;
+  -webkit-transition: all 0.2s 0s ease;
+  transition: all 0.2s 0s ease;
+  font-size: 20px;
 }
 
-@media (max-width: 1px) {
-  .container {
-    width: 100%;
-    max-width: 375px;
-  }
-  .container .intro {
-    position: relative;
-  }
-  .container .intro .card {
-    position: relative;
-    width: 100%;
-    max-width: 375px;
-  }
-  .container .intro .card .pic-left {
-    position: relative;
-    width: 100%;
-    max-width: 375px;
-  }
-  .container .intro .card .pic-left img {
-    position: relative;
-    width: 100%;
-    max-width: 375px;
-  }
-  .container .intro .card .pic-left .content {
-    width: 100%;
-    max-width: 375px;
-    position: relative;
-  }
-  .container .intro .card .pic-right {
-    position: relative;
-  }
-  .container .wrap {
-    width: 100%;
-    max-width: 375px;
-  }
-  .container .wrap .main {
-    width: 100%;
-    max-width: 375px;
-    max-height: 277px;
-  }
-  .container .wrap .main .main_cards {
-    position: relative;
-  }
-  .container .wrap .main .main_cards li {
-    max-width: 125px;
-    max-height: 180px;
-    background: no-repeat;
-  }
-  .container .wrap .main .main_cards li a {
-    line-height: inherit;
-    max-width: 125px;
-  }
-  .container .nav {
-    margin: 0;
-    line-height: 18px;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 30px;
-    width: 100%;
-    max-width: 375px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .container .nav .mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: block;
-    height: 20px;
-    margin-right: 76px;
-    margin-left: 76px;
-  }
-  .container .nav .desktop {
-    display: none;
-  }
-  .container .nav ul {
-    margin: 0;
-    padding: 0;
-    width: 24px;
-  }
-  .container .nav ul li {
-    margin: 0;
-    padding: 0;
-    display: none;
-  }
-  .container .nav ul li:nth-child(4) {
-    display: block;
-  }
-  .container .nav i {
-    cursor: pointer;
-    display: block;
-    font-size: 24px;
-  }
-  .wrap .main img {
-    max-width: 375px;
-    height: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
+.nav ul li img {
+  width: 28px;
+}
+
+.nav ul li:hover {
+  border-bottom: 4px solid #3f5d45;
 }
 
 @media (max-width: 376px) {
@@ -279,6 +183,35 @@ a {
   border-right: 1px solid #eaf0ed;
   width: 148px;
   text-align: center;
+}
+
+.intro .productsList .product-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.intro .productsList .product-pages span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #eaf0ed;
+  font-size: 20px;
+}
+
+.intro .productsList .product-pages span img {
+  position: relative;
+  top: 6px;
+}
+
+.intro .productsList .product-pages a:nth-child(2) span {
+  background: #3f5d45;
+  color: #eaf0ed;
 }
 
 .intro .productsList ul {
@@ -522,6 +455,8 @@ a {
 }
 
 .introProduct .productTitle {
+  position: relative;
+  top: -4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -803,6 +738,7 @@ footer .contact .info {
 footer .contact .info img {
   width: 172px;
   height: 27px;
+  cursor: pointer;
 }
 
 footer .contact .info ul {
