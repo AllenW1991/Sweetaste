@@ -4,6 +4,9 @@ $(function () {
     alert("加入購物車");
   })
 
+
+
+
   $("#reduceNumber1").on("click", function () {
     let number = parseInt($("#product1").text());
     let price = parseInt($("#productPrice1").text());
@@ -163,21 +166,34 @@ $(function () {
     $("#totalPrice").text(`NT$ ` + addship);
   })
 
+  var price1Number = parseInt($("#product1").text()); //2
+  var price2Number = parseInt($("#product2").text()); //2
+  var price3Number = parseInt($("#product3").text()); //2
+  var price1 = parseInt($("#productPrice1").text()); //120
+  var price2 = parseInt($("#productPrice2").text()); //150
+  var price3 = parseInt($("#productPrice3").text()); //150
+
+  $("#totalPrice1").text(`NT$ ` + price1Number * price1)
+  $("#totalPrice2").text(`NT$ ` + price2Number * price2)
+  $("#totalPrice3").text(`NT$ ` + price3Number * price3)
+
+  var totalPrice = price1Number * price1 + price2Number * price2 + price3Number * price3;
+  var addship = totalPrice + 300;
+
+  $("#priceNote").text(`NT$ ` + totalPrice);
+  $("#totalPrice").text(`NT$ ` + addship);
 
 
   $(".fa-trash").on("click", function () {
     $(this).parent().addClass("not-active");
 
-    let price1Number = parseInt($("#product1").text()); //2
-    let price2Number = parseInt($("#product2").text()); //2
-    let price3Number = parseInt($("#product3").text()); //2
+    let number = parseInt($(this).prev().prev().find("span:nth-child(2)").text());
+    let price = parseInt($(this).prev().prev().prev().children("span:nth-child(2)").text().substr(3));
+    console.log(number * price);
 
-    let price1 = parseInt($("#productPrice1").text()); //120
-    let price2 = parseInt($("#productPrice2").text()); //150
-    let price3 = parseInt($("#productPrice3").text()); //150
+    let totalPrice = price1Number * price1 + price2Number * price2 + price3Number * price3 - number * price;
+    console.log(totalPrice);
 
-    let totalPrice = price1Number * price1 + price2Number * price2 + price3Number * price3;
-    // let lastTotal = totalPrice - $(this).prev()
     let addship = totalPrice + 300;
 
     $("#priceNote").text(`NT$ ` + totalPrice);
@@ -196,7 +212,7 @@ $(function () {
       alert("請輸入正確格式聯絡電話或手機")
 
     };
-    
+
   })
 
 
