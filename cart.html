@@ -25,6 +25,12 @@
     integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=='
     crossorigin='anonymous'
   />
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js'
+    integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=='
+    crossorigin='anonymous'
+  ></script>
+  <script src="./dessert.js"></script>
   <title>Cart</title>
 </head>
 
@@ -62,13 +68,22 @@
                 alt=""
               >
               <div class="productName">
-                <span>焦糖瑪卡龍</span>
-                <span>NT$ 450</span>
+                <span>肉桂派</span>
+                <span >NT$<span id="productPrice1">120</span></span>
               </div>
               <div class="number">
-                <span>-</span><span>2</span><span>+</span>
+                <span
+                  class="reduceNumber"
+                  id="reduceNumber1"
+                >-</span><span
+                  class="productNumber"
+                  id="product1"
+                >2</span><span
+                  class="addNumber"
+                  id="addNumber1"
+                >+</span>
               </div>
-              <div class="totalPrice">NT$ 900</div>
+              <div class="totalPrice" id="totalPrice1">NT$ 240</div>
               <i class="fas fa-trash"></i>
             </li>
             <li>
@@ -77,13 +92,22 @@
                 alt=""
               >
               <div class="productName">
-                <span>焦糖瑪卡龍</span>
-                <span>NT$ 450</span>
+                <span>手作莓醬蛋糕</span>
+                <span >NT$<span id="productPrice2"> 150</span></span>
               </div>
               <div class="number">
-                <span>-</span><span>2</span><span>+</span>
+                <span
+                  class="reduceNumber"
+                  id="reduceNumber2"
+                >-</span><span
+                  class="productNumber"
+                  id="product2"
+                >2</span><span
+                  class="addNumber"
+                  id="addNumber2"
+                >+</span>
               </div>
-              <div class="totalPrice">NT$ 900</div>
+              <div class="totalPrice" id="totalPrice2">NT$ 300</div>
               <i class="fas fa-trash"></i>
             </li>
             <li>
@@ -92,13 +116,22 @@
                 alt=""
               >
               <div class="productName">
-                <span>焦糖瑪卡龍</span>
-                <span>NT$ 450</span>
+                <span>手作莓醬奶酪</span>
+                <span >NT$<span id="productPrice3"> 150</span></span>
               </div>
               <div class="number">
-                <span>-</span><span>2</span><span>+</span>
+                <span
+                  class="reduceNumber"
+                  id="reduceNumber3"
+                >-</span><span
+                  class="productNumber"
+                  id="product3"
+                >2</span><span
+                  class="addNumber"
+                  id="addNumber3"
+                >+</span>
               </div>
-              <div class="totalPrice">NT$ 900</div>
+              <div class="totalPrice" id="totalPrice3">NT$ 300</div>
               <i class="fas fa-trash"></i>
             </li>
           </ul>
@@ -106,7 +139,7 @@
         <div class="cartSummary">
           <p>訂單摘要</p>
           <div class="cal">
-            <p><span>小記</span><span>NT$ 2,700</span></p>
+            <p><span>小記</span><span id="priceNote">54135351</span></p>
             <p><span>運費</span><span>NT$ 300</span></p>
             <p><span>總計</span><span>NT$ 3,000</span></p>
           </div>

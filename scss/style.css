@@ -1108,9 +1108,19 @@ footer .mail .mailRight h4 {
   height: 48px;
 }
 
-.cart .cartProducts ul li .productName span {
+.cart .cartProducts ul li .productName span:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   display: block;
   height: 16px;
+  width: 108px;
+}
+
+.cart .cartProducts ul li .productName span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 108px;
 }
 
