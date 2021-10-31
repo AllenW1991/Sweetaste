@@ -230,6 +230,32 @@
   .mobile .mobile-container .mobile-shipment .mobile-invoice-info {
     width: 315px;
   }
+  .mobile .mobile-container .mobile-shipment .mobile-invoice-info .mobile-invoice-form1 {
+    border: 1px solid #eaf0ed;
+    margin-bottom: 30px;
+  }
+  .mobile .mobile-container .mobile-shipment .mobile-invoice-info .mobile-invoice-form1 span {
+    background: #3f5d45;
+    height: 56px;
+    width: 153px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #eaf0ed;
+    line-height: 56px;
+  }
+  .mobile .mobile-container .mobile-shipment .mobile-invoice-info .mobile-invoice-form1 .mobile-email-invoice {
+    background: #eaf0ed;
+    height: 56px;
+    width: 153px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f5d45;
+    line-height: 56px;
+  }
   .mobile .mobile-container .mobile-shipment .mobile-invoice-info .mobile-invoice-form {
     border: 1px solid #eaf0ed;
     margin-bottom: 30px;
