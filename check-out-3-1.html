@@ -25,6 +25,12 @@
     integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=='
     crossorigin='anonymous'
   />
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js'
+    integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=='
+    crossorigin='anonymous'
+  ></script>
+  <script src="./dessert.js"></script>
   <title>CheckOut-Step3-1</title>
 </head>
 
@@ -64,7 +70,7 @@
           </div>
           <div class="invoice1">
             <span>電子發票</span>
-            <span>郵寄發票</span>
+            <span id="postInvoice" >郵寄發票</span>
           </div>
           <div class="delInfo">
             <div class="email">
@@ -72,6 +78,7 @@
               <input
                 type="text"
                 placeholder="example@email.com"
+                id="emailAddr"
               >
             </div>
             <div class="taxId">
@@ -82,7 +89,10 @@
               >
             </div>
           </div>
-          <span class="next">確認結帳</span>
+          <span
+            class="next"
+            id="confirm"
+          >確認結帳</span>
         </div>
         <div class="delieveryRight">
           <div class="cartSummaryLight">
@@ -203,7 +213,7 @@
       </div>
     </footer>
   </div>
-  
+
   <div class="mobile">
     <div class="mobile-nav">
       <i
@@ -241,7 +251,10 @@
           <ul>
             <li class="mobile-invoice-form">
               <span>電子發票</span>
-              <span>郵寄發票</span>
+              <a
+                href=""
+                id="mobile-postInvoice"
+              ><span>郵寄發票</span></a>
             </li>
             <li>
               <h3>電子郵件信箱</h3><input

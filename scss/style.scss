@@ -16,7 +16,7 @@ a {
   width: 940px;
   margin: 0 auto;
   position: relative;
-  
+
   .wrap {
     position: relative;
     .main {
@@ -1088,8 +1088,10 @@ footer {
         color: #3f5d45;
         font-weight: bold;
       }
-      span:nth-child(2) {
+      span:nth-child(1) {
         border-left: 0px;
+        cursor: pointer;
+        border-left: 1px solid #eaf0ed;
       }
     }
     .invoice1 {
@@ -1114,6 +1116,7 @@ footer {
       }
       span:nth-child(2) {
         border-left: 0px;
+        cursor: pointer;
       }
     }
     .next {
@@ -1438,6 +1441,11 @@ footer {
       height: 65px;
       background: #ffe180;
       font-weight: bold;
+      transition: all 0.3s 0s ease;
+    }
+    p:hover {
+      background: #3f5d45;
+      color: #eaf0ed;
     }
     h1 {
       margin-top: 120px;

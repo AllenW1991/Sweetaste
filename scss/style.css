@@ -1436,8 +1436,10 @@ footer .mail .mailRight h4 {
   font-weight: bold;
 }
 
-.delievery .delDetail .invoice2 span:nth-child(2) {
+.delievery .delDetail .invoice2 span:nth-child(1) {
   border-left: 0px;
+  cursor: pointer;
+  border-left: 1px solid #eaf0ed;
 }
 
 .delievery .delDetail .invoice1 {
@@ -1471,6 +1473,7 @@ footer .mail .mailRight h4 {
 
 .delievery .delDetail .invoice1 span:nth-child(2) {
   border-left: 0px;
+  cursor: pointer;
 }
 
 .delievery .delDetail .next {
@@ -1843,6 +1846,13 @@ footer .mail .mailRight h4 {
   height: 65px;
   background: #ffe180;
   font-weight: bold;
+  -webkit-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
+}
+
+.success .progress p:hover {
+  background: #3f5d45;
+  color: #eaf0ed;
 }
 
 .success .progress h1 {

@@ -230,6 +230,30 @@ $(function () {
     };
 
   })
+  $("#confirm").on("click", function () {
+    let emailAddrInput = $("#emailAddr").val();
+    let emailAddr = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+
+    if (emailAddr.test(emailAddrInput)) {
+      $(location).attr("href", "https://allenw1991.github.io/dessertStore_reMaster/checkout_success.html")
+    } else {
+      alert("請輸入正確電子信箱")
+    }
+  })
+  $("#postInvoice").one("click", function () {
+    $(location).attr("href", "https://allenw1991.github.io/dessertStore_reMaster/check-out-3-2.html")
+  })
 
 
+  $("#emailInvoice").one("click", function () {
+    $(location).attr("href", "https://allenw1991.github.io/dessertStore_reMaster/check-out-3-1.html")
+  })
+
+  $("#confirm3-2").on("click", function () {
+    $(location).attr("href", "https://allenw1991.github.io/dessertStore_reMaster/checkout_success.html");
+  })
+
+  $("#keepShopping").on("click", function () {
+    $(location).attr("href", "https://allenw1991.github.io/dessertStore_reMaster/product.html");
+  })
 })
