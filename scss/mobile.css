@@ -11,9 +11,8 @@
     max-width: 375px;
   }
   .mobile .mobile-nav {
-    z-index: 1;
+    z-index: 2;
     top: 0px;
-    height: 50px;
     background: #ffffff;
     width: 375px;
     position: fixed;
@@ -26,9 +25,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .mobile .mobile-nav .menu-inside {
-    display: none;
   }
   .mobile .mobile-nav i {
     color: #3f5d45;
@@ -46,11 +42,42 @@
     height: 20px;
     position: relative;
   }
+  .mobile #menu-switch:checked + .menu-inside {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .mobile #menu-switch {
+    position: absolute;
+    opacity: 0;
+  }
+  .mobile .menu-inside {
+    z-index: 1;
+    position: fixed;
+    color: #3f5d45;
+    padding: 0 40px;
+    top: 40px;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: #ffffff;
+    width: 315px;
+  }
+  .mobile .menu-inside li {
+    height: 32px;
+    margin-bottom: 12px;
+    border-bottom: #eaf0ed 0.1px solid;
+  }
+  .mobile .menu-inside li:last-child {
+    border: 0;
+  }
   .mobile .mobile-container {
     position: relative;
-    top: 48px;
     margin: 0 auto;
     width: 100%;
+    top: 40px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .mobile .mobile-container .mobile-success-keepshopping {
     display: inline-block;
@@ -803,7 +830,6 @@
   }
   .mobile .mobile-container .mobile-main-pic {
     width: 375px;
-    height: 277px;
     -o-object-fit: cover;
        object-fit: cover;
   }
