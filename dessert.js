@@ -198,7 +198,8 @@ $(function () {
 
     $("#priceNote").text(`NT$ ` + totalPrice);
     $("#totalPrice").text(`NT$ ` + addship);
-
+    number == 0;
+    price == 0;
   })
 
 
@@ -211,6 +212,21 @@ $(function () {
     } else {
       alert("請輸入正確格式聯絡電話或手機")
 
+    };
+
+  })
+  $("#next-2").on("click", function () {
+    let creditCardInput = $("#credit-card-number").val();
+    let creditCardNumber = /\d{4}-\d{4}-\d{4}-\d{4}/;
+
+    let securityCodeInput = $("#securityCode").val();
+    let securityCode = /\d{3}/;
+
+
+    if (creditCardNumber.test(creditCardInput) && securityCode.test(securityCodeInput)) {
+      $(location).attr("href", "https://allenw1991.github.io/dessertStore_reMaster/check-out-3-1.html")
+    } else {
+      alert("請輸入正確信用卡號碼或背面三碼")
     };
 
   })
