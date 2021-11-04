@@ -240,12 +240,12 @@ $(function () {
       alert("請輸入正確電子信箱")
     }
   })
-  $("#postInvoice").one("click", function () {
+  $("#postInvoice").on("click", function () {
     $(location).attr("href", "https://allenw1991.github.io/dessertStore_reMaster/check-out-3-2.html")
   })
 
 
-  $("#emailInvoice").one("click", function () {
+  $("#emailInvoice").on("click", function () {
     $(location).attr("href", "https://allenw1991.github.io/dessertStore_reMaster/check-out-3-1.html")
   })
 
