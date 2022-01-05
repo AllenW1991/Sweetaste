@@ -1,6 +1,6 @@
-@media (max-width: 376px) {
+@media (max-width: 768px) {
   html {
-    max-width: 375px;
+    width: 100%;
   }
   .desktop {
     display: none;
@@ -8,12 +8,13 @@
   .mobile {
     font-family: sans-serif;
     display: block;
-    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
     .mobile-nav {
       z-index: 2;
       top: 0px;
       background: #ffffff;
-      width: 375px;
+      width: 100%;
       position: fixed;
       display: flex;
       justify-content: space-evenly;
@@ -69,7 +70,7 @@
     .mobile-container {
       position: relative;
       margin: 0 auto;
-      width: 100%;
+      width: 375px;
       top: 40px;
       transition: 0.3s;
       .mobile-success-keepshopping {
@@ -116,7 +117,7 @@
             }
             span:nth-child(2)::before {
               position: absolute;
-              content: "";
+              content: '';
               width: 60px;
               height: 1px;
               top: 16px;
@@ -125,7 +126,7 @@
             }
             span:nth-child(3)::before {
               position: absolute;
-              content: "";
+              content: '';
               width: 60px;
               height: 1px;
               top: 16px;
@@ -352,7 +353,7 @@
               border: 3px double #3f5d45;
             }
             span:nth-child(1)::after {
-              content: "";
+              content: '';
               position: absolute;
               width: 42px;
               height: 1px;
@@ -361,7 +362,7 @@
               background: #eaf0ed;
             }
             span:nth-child(2)::after {
-              content: "";
+              content: '';
               position: absolute;
               width: 42px;
               height: 1px;
@@ -468,7 +469,7 @@
               border: 3px double #3f5d45;
             }
             span:nth-child(1)::after {
-              content: "";
+              content: '';
               position: absolute;
               width: 42px;
               height: 1px;
@@ -477,7 +478,7 @@
               background: #eaf0ed;
             }
             span:nth-child(2)::after {
-              content: "";
+              content: '';
               position: absolute;
               width: 42px;
               height: 1px;
@@ -818,7 +819,7 @@
               position: absolute;
               left: 85px;
               top: 50%;
-              content: "";
+              content: '';
               width: 40px;
               height: 1px;
               background-color: #3f5d45;
