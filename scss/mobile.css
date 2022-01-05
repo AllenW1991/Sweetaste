@@ -20,9 +20,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 24px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -75,8 +78,21 @@
   .mobile .mobile-container {
     position: relative;
     margin: 0 auto;
-    width: 375px;
+    width: 100%;
     top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -856,13 +872,59 @@
     background-image: url(../img/p-4.png);
   }
   .mobile .mobile-container .mobile-main-pic {
-    width: 375px;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .mobile .mobile-container .mobile-intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobile .mobile-container .mobile-intro .mobile-intro-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobile .mobile-container .mobile-intro .mobile-intro-cards li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .mobile .mobile-container .mobile-intro .mobile-intro-cards li img {
     width: 375px;
     height: 250px;
+    margin-bottom: 48px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -880,8 +942,7 @@
     text-align: center;
     width: 196px;
     height: 60px;
-    padding: 30px 90px;
-    margin-bottom: 15px;
+    margin: 64px 0;
     line-height: 40px;
     letter-spacing: 4px;
   }
@@ -1016,7 +1077,7 @@
   .mobile-footer .mobile-mail .mobile-mail-input input {
     outline: none;
     font-size: 24px;
-    width: 250px;
+    width: 80%;
     height: 56px;
     padding-left: 60px;
   }
